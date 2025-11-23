@@ -1,8 +1,9 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 import { config } from "dotenv";
+import { test } from "./global-setup";
 
-config();
+config({ quiet: true });
 
 export default defineConfig({
   testDir: "./tests",
@@ -19,7 +20,7 @@ export default defineConfig({
   },
   reporter: "html",
   use: {
-    baseURL: process.env.BASE_URL,
+    baseURL: process.env.BASE_URL ?? "https://essential-addons.com",
     testIdAttribute: "data-id",
 
     //screenshot: "on",
@@ -33,38 +34,15 @@ export default defineConfig({
   projects: [
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
+      use: { ...devices["Desktop Chrome"], ...test },
     },
-
     {
       name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
+      use: { ...devices["Desktop Firefox"], ...test },
     },
-
     {
       name: "webkit",
-      use: { ...devices["Desktop Safari"] },
+      use: { ...devices["Desktop Safari"], ...test },
     },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
   ],
 });
-
