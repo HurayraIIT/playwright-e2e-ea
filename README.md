@@ -10,7 +10,25 @@
 
 This project provides comprehensive automated testing for [Essential Addons for Elementor](https://essential-addons.com/) demo pages. It uses Playwright to perform visual regression testing and functional validation across all widget demos.
 
-**Live Test Reports:** [https://ea-visual-regression.hurayraiit.com/](https://ea-visual-regression.hurayraiit.com/)
+---
+
+## 🎯 **Project Status**
+
+<div align="center">
+
+### 📊 **Test Coverage**
+
+![Coverage](https://img.shields.io/badge/Coverage-17%2F115-blue?style=for-the-badge)
+![Automated](https://img.shields.io/badge/Automated-14.8%25-green?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-98-orange?style=for-the-badge)
+
+### 🔗 **[VIEW LIVE TEST REPORTS →](https://ea-visual-regression.hurayraiit.com/)**
+
+**✅ 17 Demos Automated** | **⏳ 98 Demos Remaining** | **📈 14.8% Complete**
+
+</div>
+
+---
 
 ## 🎯 Purpose
 
@@ -102,13 +120,26 @@ npx playwright show-report
 ```
 playwright-e2e-ea/
 ├── tests/                          # Test files organized by category
-│   ├── creative-elements/          # Creative element tests
+│   ├── creative-elements/          # Creative element tests (6 tests)
 │   │   ├── filterable-gallery.spec.js
 │   │   ├── image-hotspots.spec.js
 │   │   ├── interactive-cards.spec.js
 │   │   ├── interactive-circle.spec.js
 │   │   ├── interactive-promo.spec.js
 │   │   └── one-page-nav.spec.js
+│   ├── documentation-elements/     # Documentation element tests (3 tests)
+│   │   ├── betterdocs-category-box.spec.js
+│   │   ├── betterdocs-category-grid.spec.js
+│   │   └── betterdocs-search-form.spec.js
+│   ├── woocommerce-elements/       # WooCommerce element tests (8 tests)
+│   │   ├── woo-cart.spec.js
+│   │   ├── woo-product-carousel.spec.js
+│   │   ├── woo-product-compare.spec.js
+│   │   ├── woo-product-gallery.spec.js
+│   │   ├── woo-product-grid.spec.js
+│   │   ├── woo-product-slider.spec.js
+│   │   ├── woo-thank-you.spec.js
+│   │   └── woocommerce-product-collections.spec.js
 │   └── example.spec.js             # Example test
 ├── global-setup.js                 # Global test configuration
 ├── playwright.config.js            # Playwright configuration
@@ -310,21 +341,21 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ### Documentation Elements (3)
 
-- [ ] BetterDocs Category Grid
-- [ ] BetterDocs Category Box
-- [ ] BetterDocs Search Form
+- [x] BetterDocs Category Grid
+- [x] BetterDocs Category Box
+- [x] BetterDocs Search Form
 
 ### WooCommerce Elements (16)
 
-- [ ] Woo Thank You
-- [ ] Woo Cart
-- [ ] Woo Product Carousel
-- [ ] Woo Product Gallery
+- [x] Woo Thank You
+- [x] Woo Cart
+- [x] Woo Product Carousel
+- [x] Woo Product Gallery
 - [ ] Woo Checkout
-- [ ] Woo Product Slider
-- [ ] Woo Product Collections
-- [ ] Woo Product Grid
-- [ ] Woo Product Compare
+- [x] Woo Product Slider
+- [x] Woo Product Collections
+- [x] Woo Product Grid
+- [x] Woo Product Compare
 - [ ] Woo Cross Sells
 - [ ] Woo Account Dashboard
 - [ ] Woo Product List
@@ -357,7 +388,21 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ---
 
-**Total Progress:** 6/115 demos automated (5.2%)
+**Total Progress:** 17/115 demos automated (14.8%)
+
+**Breakdown by Category:**
+
+- ✅ Creative Elements: 6/20 (30%)
+- ✅ Documentation Elements: 3/3 (100%)
+- ✅ WooCommerce Elements: 8/16 (50%)
+- ⏳ Content Elements: 0/24 (0%)
+- ⏳ Dynamic Content Elements: 0/13 (0%)
+- ⏳ Marketing Elements: 0/4 (0%)
+- ⏳ Figma Design: 0/1 (0%)
+- ⏳ Form Styler Elements: 0/11 (0%)
+- ⏳ Social Elements: 0/4 (0%)
+- ⏳ LearnDash Elements: 0/1 (0%)
+- ⏳ Extensions: 0/18 (0%)
 
 ## 📝 License
 
