@@ -2,7 +2,7 @@
 
 import { test, expect } from "../../global-setup";
 
-test.describe("Interactive Circle", () => {
+test.describe("Interactive Promo", () => {
   let slug = "/interactive-promo";
   let heading = "Interactive Promo";
 
