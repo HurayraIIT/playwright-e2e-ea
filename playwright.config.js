@@ -23,8 +23,8 @@ export default defineConfig({
     baseURL: process.env.BASE_URL ?? "https://essential-addons.com",
     testIdAttribute: "data-id",
 
-    //screenshot: "on",
-    trace: "retain-on-failure",
+    screenshot: "on",
+    trace: "on",
     video: "retain-on-failure",
 
     ignoreHTTPSErrors: true,

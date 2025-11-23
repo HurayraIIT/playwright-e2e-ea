@@ -26,7 +26,7 @@ test.describe("Interactive Circle", () => {
   });
 
   test("Layout 03", async ({ page }) => {
-    const section = page.getByTestId("d5a5f88");
+    const section = page.getByTestId("3f45059");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(5000);
     await expect(section).toHaveScreenshot();
