@@ -19,6 +19,7 @@ test.describe("Simple Menu", () => {
   test("Layout 01", async ({ page }) => {
     const section = page.getByTestId("7bdd1b2");
     await section.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(500);
     await expect(section).toHaveScreenshot();
   });
 

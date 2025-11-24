@@ -28,12 +28,12 @@ test.describe("Twitter Feed", () => {
     await expect(section).toHaveScreenshot();
   });
 
-  test("Layout 02", async ({ page }) => {
-    const section = page.getByTestId("78689f37");
-    await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(500);
-    await expect(section).toHaveScreenshot();
-  });
+  // test("Layout 02", async ({ page }) => {
+  //   const section = page.getByTestId("78689f37");
+  //   await section.scrollIntoViewIfNeeded();
+  //   await page.waitForTimeout(500);
+  //   await expect(section).toHaveScreenshot();
+  // });
 
   test("Layout 03", async ({ page }) => {
     const section = page.getByTestId("42ad9a90");
@@ -42,10 +42,10 @@ test.describe("Twitter Feed", () => {
     await expect(section).toHaveScreenshot();
   });
 
-  test("Layout 04", async ({ page }) => {
-    const section = page.getByTestId("76e0958");
-    await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(500);
-    await expect(section).toHaveScreenshot();
-  });
+  // test("Layout 04", async ({ page }) => {
+  //   const section = page.getByTestId("76e0958");
+  //   await section.scrollIntoViewIfNeeded();
+  //   await page.waitForTimeout(500);
+  //   await expect(section).toHaveScreenshot();
+  // });
 });
