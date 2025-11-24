@@ -18,13 +18,14 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 ### 📊 **Test Coverage**
 
-![Coverage](https://img.shields.io/badge/Coverage-17%2F115-blue?style=for-the-badge)
-![Automated](https://img.shields.io/badge/Automated-14.8%25-green?style=for-the-badge)
-![Remaining](https://img.shields.io/badge/Remaining-98-orange?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-25%2F115-blue?style=for-the-badge)
+![Automated](https://img.shields.io/badge/Automated-21.7%25-green?style=for-the-badge)
+![Total Tests](https://img.shields.io/badge/Total_Tests-92-brightgreen?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-90-orange?style=for-the-badge)
 
 ### 🔗 **[VIEW LIVE TEST REPORTS →](https://ea-visual-regression.hurayraiit.com/)**
 
-**✅ 17 Demos Automated** | **⏳ 98 Demos Remaining** | **📈 14.8% Complete**
+**✅ 25 Demos Automated** | **🧪 92 Total Tests** | **⏳ 90 Demos Remaining** | **📈 21.7% Complete**
 
 </div>
 
@@ -42,10 +43,11 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 - **Visual Regression Testing**: Screenshot-based comparison with 3% pixel difference tolerance
 - **Parallel Execution**: Tests run in parallel for faster execution
-- **Comprehensive Coverage**: Tests for 115+ widgets and extensions
+- **Comprehensive Coverage**: 92 test cases across 25 widgets (21.7% of 115 total widgets)
 - **CI/CD Ready**: Configured for continuous integration environments
 - **Detailed Reporting**: HTML reports with screenshots, traces, and videos
 - **Network Optimization**: Blocks unnecessary third-party scripts for faster tests
+- **Category Completion**: 3 categories fully automated (Documentation, Marketing, LearnDash)
 
 ## 🚀 Getting Started
 
@@ -119,19 +121,30 @@ npx playwright show-report
 
 ```
 playwright-e2e-ea/
-├── tests/                          # Test files organized by category
-│   ├── creative-elements/          # Creative element tests (6 tests)
+├── tests/                          # Test files organized by category (25 spec files, 92 tests)
+│   ├── creative-elements/          # Creative element tests (6 specs, 21 tests)
 │   │   ├── filterable-gallery.spec.js
 │   │   ├── image-hotspots.spec.js
 │   │   ├── interactive-cards.spec.js
 │   │   ├── interactive-circle.spec.js
 │   │   ├── interactive-promo.spec.js
 │   │   └── one-page-nav.spec.js
-│   ├── documentation-elements/     # Documentation element tests (3 tests)
+│   ├── documentation-elements/     # Documentation element tests (3 specs, 5 tests) ✨
 │   │   ├── betterdocs-category-box.spec.js
 │   │   ├── betterdocs-category-grid.spec.js
 │   │   └── betterdocs-search-form.spec.js
-│   ├── woocommerce-elements/       # WooCommerce element tests (8 tests)
+│   ├── learndash-elements/         # LearnDash element tests (1 spec, 5 tests) ✨
+│   │   └── learndash-course-list.spec.js
+│   ├── marketing-elements/         # Marketing element tests (4 specs, 22 tests) ✨
+│   │   ├── call-to-action.spec.js
+│   │   ├── multicolumn-pricing-table.spec.js
+│   │   ├── price-menu.spec.js
+│   │   └── pricing-table.spec.js
+│   ├── social-elements/            # Social element tests (3 specs, 8 tests)
+│   │   ├── instagram-feed.spec.js
+│   │   ├── twitter-feed-carousel.spec.js
+│   │   └── twitter-feed.spec.js
+│   ├── woocommerce-elements/       # WooCommerce element tests (8 specs, 31 tests)
 │   │   ├── woo-cart.spec.js
 │   │   ├── woo-product-carousel.spec.js
 │   │   ├── woo-product-compare.spec.js
@@ -146,6 +159,8 @@ playwright-e2e-ea/
 ├── package.json                    # Project dependencies
 └── README.md                       # This file
 ```
+
+✨ = Fully automated category (100% coverage)
 
 ## ⚙️ Configuration Details
 
@@ -282,10 +297,10 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ### Marketing Elements (4)
 
-- [ ] Pricing Table
-- [ ] Call to Action
-- [ ] Price Menu
-- [ ] Multicolumn Pricing Table
+- [x] Pricing Table
+- [x] Call to Action
+- [x] Price Menu
+- [x] Multicolumn Pricing Table
 
 ### Creative Elements (20)
 
@@ -330,14 +345,14 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ### Social Elements (4)
 
-- [ ] Twitter Feed Carousel
-- [ ] Twitter Feed
-- [ ] Instagram Feed
+- [x] Twitter Feed Carousel
+- [x] Twitter Feed
+- [x] Instagram Feed
 - [ ] Facebook Feed
 
 ### LearnDash Elements (1)
 
-- [ ] LearnDash Course List
+- [x] LearnDash Course List
 
 ### Documentation Elements (3)
 
@@ -388,21 +403,25 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ---
 
-**Total Progress:** 17/115 demos automated (14.8%)
+**Total Progress:** 25/115 demos automated (21.7%) | **92 individual test cases**
 
 **Breakdown by Category:**
 
-- ✅ Creative Elements: 6/20 (30%)
-- ✅ Documentation Elements: 3/3 (100%)
-- ✅ WooCommerce Elements: 8/16 (50%)
-- ⏳ Content Elements: 0/24 (0%)
-- ⏳ Dynamic Content Elements: 0/13 (0%)
-- ⏳ Marketing Elements: 0/4 (0%)
-- ⏳ Figma Design: 0/1 (0%)
-- ⏳ Form Styler Elements: 0/11 (0%)
-- ⏳ Social Elements: 0/4 (0%)
-- ⏳ LearnDash Elements: 0/1 (0%)
-- ⏳ Extensions: 0/18 (0%)
+| Category                    | Demos | Tests    | Coverage |
+| --------------------------- | ----- | -------- | -------- |
+| ✅ Creative Elements        | 6/20  | 21 tests | 30%      |
+| ✅ Documentation Elements   | 3/3   | 5 tests  | 100% ✨  |
+| ✅ WooCommerce Elements     | 8/16  | 31 tests | 50%      |
+| ✅ Marketing Elements       | 4/4   | 22 tests | 100% ✨  |
+| ✅ Social Elements          | 3/4   | 8 tests  | 75%      |
+| ✅ LearnDash Elements       | 1/1   | 5 tests  | 100% ✨  |
+| ⏳ Content Elements         | 0/24  | 0 tests  | 0%       |
+| ⏳ Dynamic Content Elements | 0/13  | 0 tests  | 0%       |
+| ⏳ Figma Design             | 0/1   | 0 tests  | 0%       |
+| ⏳ Form Styler Elements     | 0/11  | 0 tests  | 0%       |
+| ⏳ Extensions               | 0/18  | 0 tests  | 0%       |
+
+**🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements
 
 ## 📝 License
 
