@@ -19,21 +19,21 @@ test.describe("Image Hotspot", () => {
   test("Layout 01", async ({ page }) => {
     const section = page.getByTestId("1a3dd460");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(1500);
     await expect(section).toHaveScreenshot();
   });
 
   test("Layout 02", async ({ page }) => {
     const section = page.getByTestId("1f348079");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(1500);
     await expect(section).toHaveScreenshot();
   });
 
   test("Layout 03", async ({ page }) => {
     const section = page.getByTestId("3d8128dd");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(1500);
     await expect(section).toHaveScreenshot();
   });
 });
