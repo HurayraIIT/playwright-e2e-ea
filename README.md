@@ -18,14 +18,14 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 ### 📊 **Test Coverage**
 
-![Coverage](https://img.shields.io/badge/Coverage-54%2F115-blue?style=for-the-badge)
-![Automated](https://img.shields.io/badge/Automated-46.96%25-green?style=for-the-badge)
-![Total Tests](https://img.shields.io/badge/Total_Tests-207-brightgreen?style=for-the-badge)
-![Remaining](https://img.shields.io/badge/Remaining-61-orange?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-62%2F115-blue?style=for-the-badge)
+![Automated](https://img.shields.io/badge/Automated-53.91%25-green?style=for-the-badge)
+![Total Tests](https://img.shields.io/badge/Total_Tests-236-brightgreen?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-53-orange?style=for-the-badge)
 
 ### 🔗 **[VIEW LIVE TEST REPORTS →](https://ea-visual-regression.hurayraiit.com/)**
 
-**✅ 54 Demos Automated** | **🧪 207 Total Tests** | **⏳ 61 Demos Remaining** | **📈 46.96% Complete**
+**✅ 62 Demos Automated** | **🧪 236 Total Tests** | **⏳ 53 Demos Remaining** | **📈 53.91% Complete**
 
 </div>
 
@@ -43,11 +43,11 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 - **Visual Regression Testing**: Screenshot-based comparison with 3% pixel difference tolerance
 - **Parallel Execution**: Tests run in parallel for faster execution
-- **Comprehensive Coverage**: 207 test cases across 54 widgets (46.96% of 115 total widgets)
+- **Comprehensive Coverage**: 236 test cases across 62 widgets (53.91% of 115 total widgets)
 - **CI/CD Ready**: Configured for continuous integration environments
 - **Detailed Reporting**: HTML reports with screenshots, traces, and videos
 - **Network Optimization**: Blocks unnecessary third-party scripts for faster tests
-- **Category Completion**: 4 categories fully automated (Documentation, Marketing, LearnDash, Form Styler)
+- **Category Completion**: 5 categories fully automated (Documentation, Marketing, LearnDash, Form Styler, WooCommerce)
 
 ## 🚀 Getting Started
 
@@ -121,7 +121,7 @@ npx playwright show-report
 
 ```
 playwright-e2e-ea/
-├── tests/                          # Test files organized by category (54 spec files, 207 tests)
+├── tests/                          # Test files organized by category (62 spec files, 236 tests)
 │   ├── content-elements/            # Content element tests (18 specs, 83 tests)
 │   │   ├── advanced-accordion.spec.js
 │   │   ├── advanced-menu.spec.js
@@ -175,12 +175,20 @@ playwright-e2e-ea/
 │   │   ├── instagram-feed.spec.js
 │   │   ├── twitter-feed-carousel.spec.js
 │   │   └── twitter-feed.spec.js
-│   ├── woocommerce-elements/       # WooCommerce element tests (8 specs, 31 tests)
+│   ├── woocommerce-elements/       # WooCommerce element tests (16 specs, 60 tests) ✨
+│   │   ├── woo-account-dashboard.spec.js
+│   │   ├── woo-add-to-cart.spec.js
 │   │   ├── woo-cart.spec.js
+│   │   ├── woo-checkout.spec.js
+│   │   ├── woo-cross-sells.spec.js
 │   │   ├── woo-product-carousel.spec.js
 │   │   ├── woo-product-compare.spec.js
 │   │   ├── woo-product-gallery.spec.js
 │   │   ├── woo-product-grid.spec.js
+│   │   ├── woo-product-images.spec.js
+│   │   ├── woo-product-list.spec.js
+│   │   ├── woo-product-price.spec.js
+│   │   ├── woo-product-rating.spec.js
 │   │   ├── woo-product-slider.spec.js
 │   │   ├── woo-thank-you.spec.js
 │   │   └── woocommerce-product-collections.spec.js
@@ -397,18 +405,18 @@ This section tracks the automation status of all Essential Addons for Elementor 
 - [x] Woo Cart
 - [x] Woo Product Carousel
 - [x] Woo Product Gallery
-- [ ] Woo Checkout
+- [x] Woo Checkout
 - [x] Woo Product Slider
 - [x] Woo Product Collections
 - [x] Woo Product Grid
 - [x] Woo Product Compare
-- [ ] Woo Cross Sells
-- [ ] Woo Account Dashboard
-- [ ] Woo Product List
-- [ ] Woo Product Price
-- [ ] Woo Add To Cart
-- [ ] Woo Product Rating
-- [ ] Woo Product Images
+- [x] Woo Cross Sells
+- [x] Woo Account Dashboard
+- [x] Woo Product List
+- [x] Woo Product Price
+- [x] Woo Add To Cart
+- [x] Woo Product Rating
+- [x] Woo Product Images
 
 ### Extensions (18)
 
@@ -434,7 +442,7 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ---
 
-**Total Progress:** 54/115 demos automated (46.96%) | **207 individual test cases**
+**Total Progress:** 62/115 demos automated (53.91%) | **236 individual test cases**
 
 **Breakdown by Category:**
 
@@ -447,12 +455,12 @@ This section tracks the automation status of all Essential Addons for Elementor 
 | ✅ LearnDash Elements       | 1/1   | 5 tests  | 100% ✨  |
 | ✅ Marketing Elements       | 4/4   | 22 tests | 100% ✨  |
 | ✅ Social Elements          | 3/4   | 6 tests  | 75%      |
-| ✅ WooCommerce Elements     | 8/16  | 31 tests | 50%      |
+| ✅ WooCommerce Elements     | 16/16 | 60 tests | 100% ✨  |
 | ⏳ Dynamic Content Elements | 0/13  | 0 tests  | 0%       |
 | ⏳ Figma Design             | 0/1   | 0 tests  | 0%       |
 | ⏳ Extensions               | 0/18  | 0 tests  | 0%       |
 
-**🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements, Form Styler Elements
+**🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements, Form Styler Elements, WooCommerce Elements
 
 ## 📝 License
 
