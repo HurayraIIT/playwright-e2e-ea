@@ -18,14 +18,14 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 ### 📊 **Test Coverage**
 
-![Coverage](https://img.shields.io/badge/Coverage-25%2F115-blue?style=for-the-badge)
-![Automated](https://img.shields.io/badge/Automated-21.7%25-green?style=for-the-badge)
-![Total Tests](https://img.shields.io/badge/Total_Tests-92-brightgreen?style=for-the-badge)
-![Remaining](https://img.shields.io/badge/Remaining-90-orange?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-54%2F115-blue?style=for-the-badge)
+![Automated](https://img.shields.io/badge/Automated-46.96%25-green?style=for-the-badge)
+![Total Tests](https://img.shields.io/badge/Total_Tests-207-brightgreen?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-61-orange?style=for-the-badge)
 
 ### 🔗 **[VIEW LIVE TEST REPORTS →](https://ea-visual-regression.hurayraiit.com/)**
 
-**✅ 25 Demos Automated** | **🧪 92 Total Tests** | **⏳ 90 Demos Remaining** | **📈 21.7% Complete**
+**✅ 54 Demos Automated** | **🧪 207 Total Tests** | **⏳ 61 Demos Remaining** | **📈 46.96% Complete**
 
 </div>
 
@@ -43,11 +43,11 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 - **Visual Regression Testing**: Screenshot-based comparison with 3% pixel difference tolerance
 - **Parallel Execution**: Tests run in parallel for faster execution
-- **Comprehensive Coverage**: 92 test cases across 25 widgets (21.7% of 115 total widgets)
+- **Comprehensive Coverage**: 207 test cases across 54 widgets (46.96% of 115 total widgets)
 - **CI/CD Ready**: Configured for continuous integration environments
 - **Detailed Reporting**: HTML reports with screenshots, traces, and videos
 - **Network Optimization**: Blocks unnecessary third-party scripts for faster tests
-- **Category Completion**: 3 categories fully automated (Documentation, Marketing, LearnDash)
+- **Category Completion**: 4 categories fully automated (Documentation, Marketing, LearnDash, Form Styler)
 
 ## 🚀 Getting Started
 
@@ -121,7 +121,26 @@ npx playwright show-report
 
 ```
 playwright-e2e-ea/
-├── tests/                          # Test files organized by category (25 spec files, 92 tests)
+├── tests/                          # Test files organized by category (54 spec files, 207 tests)
+│   ├── content-elements/            # Content element tests (18 specs, 83 tests)
+│   │   ├── advanced-accordion.spec.js
+│   │   ├── advanced-menu.spec.js
+│   │   ├── advanced-search.spec.js
+│   │   ├── advanced-tabs.spec.js
+│   │   ├── breadcrumbs.spec.js
+│   │   ├── code-snippet.spec.js
+│   │   ├── content-toggle.spec.js
+│   │   ├── creative-buttons.spec.js
+│   │   ├── dual-color-headline.spec.js
+│   │   ├── feature-list.spec.js
+│   │   ├── flip-box.spec.js
+│   │   ├── info-box.spec.js
+│   │   ├── logo-carousel.spec.js
+│   │   ├── simple-menu.spec.js
+│   │   ├── static-product.spec.js
+│   │   ├── team-members-carousel.spec.js
+│   │   ├── team-members.spec.js
+│   │   └── testimonials.spec.js
 │   ├── creative-elements/          # Creative element tests (6 specs, 21 tests)
 │   │   ├── filterable-gallery.spec.js
 │   │   ├── image-hotspots.spec.js
@@ -133,6 +152,18 @@ playwright-e2e-ea/
 │   │   ├── betterdocs-category-box.spec.js
 │   │   ├── betterdocs-category-grid.spec.js
 │   │   └── betterdocs-search-form.spec.js
+│   ├── form-styler-elements/       # Form styler element tests (11 specs, 34 tests) ✨
+│   │   ├── caldera-forms.spec.js
+│   │   ├── contact-form-7.spec.js
+│   │   ├── fluent-forms.spec.js
+│   │   ├── formstack.spec.js
+│   │   ├── gravity-forms.spec.js
+│   │   ├── login-register-form.spec.js
+│   │   ├── mailchimp.spec.js
+│   │   ├── ninja-forms.spec.js
+│   │   ├── typeform.spec.js
+│   │   ├── weforms.spec.js
+│   │   └── wpforms.spec.js
 │   ├── learndash-elements/         # LearnDash element tests (1 spec, 5 tests) ✨
 │   │   └── learndash-course-list.spec.js
 │   ├── marketing-elements/         # Marketing element tests (4 specs, 22 tests) ✨
@@ -140,7 +171,7 @@ playwright-e2e-ea/
 │   │   ├── multicolumn-pricing-table.spec.js
 │   │   ├── price-menu.spec.js
 │   │   └── pricing-table.spec.js
-│   ├── social-elements/            # Social element tests (3 specs, 8 tests)
+│   ├── social-elements/            # Social element tests (3 specs, 6 tests)
 │   │   ├── instagram-feed.spec.js
 │   │   ├── twitter-feed-carousel.spec.js
 │   │   └── twitter-feed.spec.js
@@ -254,30 +285,30 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ### Content Elements (24)
 
-- [ ] Advanced Search
+- [x] Advanced Search
 - [ ] Event Calendar
-- [ ] Info Box
+- [x] Info Box
 - [ ] Testimonial Slider
-- [ ] Testimonials
-- [ ] Toggle
-- [ ] Simple Menu
-- [ ] Flip Box
-- [ ] Team Member Carousel
-- [ ] Team Member
+- [x] Testimonials
+- [x] Toggle
+- [x] Simple Menu
+- [x] Flip Box
+- [x] Team Member Carousel
+- [x] Team Member
 - [ ] Protected Content
-- [ ] Feature List
-- [ ] Creative Buttons
-- [ ] Logo Carousel
-- [ ] Advanced Accordion
+- [x] Feature List
+- [x] Creative Buttons
+- [x] Logo Carousel
+- [x] Advanced Accordion
 - [ ] Tooltip
 - [ ] Offcanvas
-- [ ] Breadcrumb
-- [ ] Static Product
-- [ ] Dual Color Heading
-- [ ] Advanced Tabs
+- [x] Breadcrumb
+- [x] Static Product
+- [x] Dual Color Heading
+- [x] Advanced Tabs
 - [ ] Sticky Video
-- [ ] Advanced Menu
-- [ ] Code Snippet
+- [x] Advanced Menu
+- [x] Code Snippet
 
 ### Dynamic Content Elements (13)
 
@@ -331,17 +362,17 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ### Form Styler Elements (11)
 
-- [ ] Typeform
-- [ ] MailChimp
-- [ ] weForms
-- [ ] Contact Form 7
-- [ ] Caldera Forms
-- [ ] Formstack
-- [ ] WPForms
-- [ ] Login Register Form
-- [ ] Gravity Forms
-- [ ] Ninja Forms
-- [ ] FluentForm
+- [x] Typeform
+- [x] MailChimp
+- [x] weForms
+- [x] Contact Form 7
+- [x] Caldera Forms
+- [x] Formstack
+- [x] WPForms
+- [x] Login Register Form
+- [x] Gravity Forms
+- [x] Ninja Forms
+- [x] FluentForm
 
 ### Social Elements (4)
 
@@ -403,25 +434,25 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ---
 
-**Total Progress:** 25/115 demos automated (21.7%) | **92 individual test cases**
+**Total Progress:** 54/115 demos automated (46.96%) | **207 individual test cases**
 
 **Breakdown by Category:**
 
 | Category                    | Demos | Tests    | Coverage |
 | --------------------------- | ----- | -------- | -------- |
+| ✅ Content Elements         | 18/24 | 83 tests | 75%      |
 | ✅ Creative Elements        | 6/20  | 21 tests | 30%      |
 | ✅ Documentation Elements   | 3/3   | 5 tests  | 100% ✨  |
-| ✅ WooCommerce Elements     | 8/16  | 31 tests | 50%      |
-| ✅ Marketing Elements       | 4/4   | 22 tests | 100% ✨  |
-| ✅ Social Elements          | 3/4   | 8 tests  | 75%      |
+| ✅ Form Styler Elements     | 11/11 | 34 tests | 100% ✨  |
 | ✅ LearnDash Elements       | 1/1   | 5 tests  | 100% ✨  |
-| ⏳ Content Elements         | 0/24  | 0 tests  | 0%       |
+| ✅ Marketing Elements       | 4/4   | 22 tests | 100% ✨  |
+| ✅ Social Elements          | 3/4   | 6 tests  | 75%      |
+| ✅ WooCommerce Elements     | 8/16  | 31 tests | 50%      |
 | ⏳ Dynamic Content Elements | 0/13  | 0 tests  | 0%       |
 | ⏳ Figma Design             | 0/1   | 0 tests  | 0%       |
-| ⏳ Form Styler Elements     | 0/11  | 0 tests  | 0%       |
 | ⏳ Extensions               | 0/18  | 0 tests  | 0%       |
 
-**🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements
+**🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements, Form Styler Elements
 
 ## 📝 License
 
