@@ -23,7 +23,7 @@ test.describe("Filterable Gallery", () => {
     await expect(section).toHaveScreenshot();
 
     await section.locator('li[data-filter=".eael-cf-mountains"]').click();
-    // await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000);
     await expect(section).toHaveScreenshot();
   });
 
@@ -34,7 +34,7 @@ test.describe("Filterable Gallery", () => {
     await expect(section).toHaveScreenshot();
 
     await section.locator('li[data-filter=".eael-cf-headphone"]').click();
-    // await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000);
     await expect(section).toHaveScreenshot();
   });
 
@@ -45,7 +45,7 @@ test.describe("Filterable Gallery", () => {
     await expect(section).toHaveScreenshot();
 
     await section.locator('li[data-filter=".eael-cf-pop-singer"]').click();
-    // await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000);
     await expect(section).toHaveScreenshot();
   });
 
@@ -57,7 +57,7 @@ test.describe("Filterable Gallery", () => {
 
     await section.locator("button.fg-filter-trigger").click();
     await section.locator('li[data-filter=".eael-cf-fast-food"]').click();
-    // await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000);
     await expect(section).toHaveScreenshot();
   });
 });
