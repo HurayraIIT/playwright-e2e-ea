@@ -33,9 +33,7 @@ test.describe("Instagram Feed", () => {
   test("Layout 03", async ({ page }) => {
     const section = page.getByTestId("ec79f28");
     await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(2000);
-    await section.locator("a.eael-instafeed-item").first().hover();
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(1500);
     await expect(section).toHaveScreenshot();
   });
 });

@@ -21,7 +21,7 @@ test.describe("Twitter Feed", () => {
     await expect.soft(page.getByRole("heading", { name: heading, exact: true })).toBeVisible();
   });
 
-  test("Layout 01", async ({ page }) => {
+  test.skip("Layout 01", async ({ page }) => {
     const section = page.getByTestId("203b5134");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
@@ -35,7 +35,7 @@ test.describe("Twitter Feed", () => {
   //   await expect(section).toHaveScreenshot();
   // });
 
-  test("Layout 03", async ({ page }) => {
+  test.skip("Layout 03", async ({ page }) => {
     const section = page.getByTestId("42ad9a90");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);

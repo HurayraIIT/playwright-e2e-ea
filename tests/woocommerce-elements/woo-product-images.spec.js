@@ -17,37 +17,41 @@ test.describe("Woo Product Images", () => {
   });
 
   test("Style 01", async ({ page }) => {
-    const section = page.getByTestId("56917fe");
+    const section = page.getByTestId("20219ad");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     await section.locator('div[aria-label="1 / 6"]').first().click();
+    await page.hover("body");
     await page.waitForTimeout(500);
     await expect(section).toHaveScreenshot();
   });
 
   test("Style 02", async ({ page }) => {
-    const section = page.getByTestId("5cfc4ef");
+    const section = page.getByTestId("eb2acea");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     await section.locator('div[aria-label="1 / 6"]').first().click();
+    await page.hover("body");
     await page.waitForTimeout(500);
     await expect(section).toHaveScreenshot();
   });
 
   test("Style 03", async ({ page }) => {
-    const section = page.getByTestId("9c1e85d");
+    const section = page.getByTestId("94996bc");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     await section.locator('span[aria-label="Go to slide 1"]').first().click();
+    await page.hover("body");
     await page.waitForTimeout(500);
     await expect(section).toHaveScreenshot();
   });
 
   test("Style 04", async ({ page }) => {
-    const section = page.getByTestId("75d77f9");
+    const section = page.getByTestId("031677f");
     await section.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     await section.locator('div[aria-label="1 / 6"]').first().click();
+    await page.hover("body");
     await page.waitForTimeout(500);
     await expect(section).toHaveScreenshot();
   });
