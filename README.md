@@ -105,12 +105,6 @@ npx playwright test --headed
 npx playwright test tests/creative-elements/interactive-cards.spec.js
 ```
 
-### Run tests in debug mode
-
-```bash
-npx playwright test --debug
-```
-
 ### View test report
 
 ```bash
@@ -254,38 +248,6 @@ test.describe("Widget Name", () => {
   });
 });
 ```
-
-## 📦 Dependencies
-
-### Dev Dependencies
-
-- `@playwright/test`: ^1.56.1
-- `@types/node`: ^24.10.1
-
-### Dependencies
-
-- `dotenv`: ^17.2.3
-- `playwright-slack-report`: ^1.1.100
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Adding New Tests
-
-When adding tests for new widgets:
-
-1. Create a new test file in the appropriate category folder under `tests/`
-2. Follow the existing test pattern structure
-3. Use descriptive test names that match the widget layouts
-4. Include visual regression tests with `toHaveScreenshot()`
-5. Test interactive elements where applicable
 
 ## 📈 Automation Progress
 
@@ -462,21 +424,9 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 **🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements, Form Styler Elements, WooCommerce Elements
 
-## 📝 License
-
-This project is licensed under the ISC License.
-
-## 👤 Author
-
-**Abu Hurayra (HurayraIIT)**
-
 ## 🔗 Links
 
 - [Essential Addons for Elementor](https://essential-addons.com/)
 - [Demo Pages](https://essential-addons.com/demos/)
 - [Live Test Reports](https://ea-visual-regression.hurayraiit.com/)
 - [Playwright Documentation](https://playwright.dev/)
-
----
-
-Made with ❤️ for automated testing
