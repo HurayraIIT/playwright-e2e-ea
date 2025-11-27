@@ -19,18 +19,21 @@ test.describe("Breadcrumb", () => {
   test("Markup 01", async ({ page }) => {
     const section = page.getByTestId("fdaf672");
     await section.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
     await expect(section).toHaveScreenshot();
   });
 
   test("Markup 02", async ({ page }) => {
     const section = page.getByTestId("cc5a759");
     await section.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
     await expect(section).toHaveScreenshot();
   });
 
   test("Markup 03", async ({ page }) => {
     const section = page.getByTestId("4199ed8");
     await section.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
     await expect(section).toHaveScreenshot();
   });
 });
