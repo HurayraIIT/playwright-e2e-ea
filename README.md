@@ -18,14 +18,14 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 ### 📊 **Test Coverage**
 
-![Coverage](https://img.shields.io/badge/Coverage-62%2F115-blue?style=for-the-badge)
-![Automated](https://img.shields.io/badge/Automated-53.91%25-green?style=for-the-badge)
-![Total Tests](https://img.shields.io/badge/Total_Tests-236-brightgreen?style=for-the-badge)
-![Remaining](https://img.shields.io/badge/Remaining-53-orange?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-74%2F115-blue?style=for-the-badge)
+![Automated](https://img.shields.io/badge/Automated-64.35%25-green?style=for-the-badge)
+![Total Tests](https://img.shields.io/badge/Total_Tests-296-brightgreen?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-41-orange?style=for-the-badge)
 
 ### 🔗 **[VIEW LIVE TEST REPORTS →](https://ea-visual-regression.hurayraiit.com/)**
 
-**✅ 62 Demos Automated** | **🧪 236 Total Tests** | **⏳ 53 Demos Remaining** | **📈 53.91% Complete**
+**✅ 74 Demos Automated** | **🧪 296 Total Tests** | **⏳ 41 Demos Remaining** | **📈 64.35% Complete**
 
 </div>
 
@@ -43,7 +43,7 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 - **Visual Regression Testing**: Screenshot-based comparison with 3% pixel difference tolerance
 - **Parallel Execution**: Tests run in parallel for faster execution
-- **Comprehensive Coverage**: 236 test cases across 62 widgets (53.91% of 115 total widgets)
+- **Comprehensive Coverage**: 296 test cases across 74 widgets (64.35% of 115 total widgets)
 - **CI/CD Ready**: Configured for continuous integration environments
 - **Detailed Reporting**: HTML reports with screenshots, traces, and videos
 - **Network Optimization**: Blocks unnecessary third-party scripts for faster tests
@@ -115,7 +115,7 @@ npx playwright show-report
 
 ```
 playwright-e2e-ea/
-├── tests/                          # Test files organized by category (62 spec files, 236 tests)
+├── tests/                          # Test files organized by category (74 spec files, 296 tests)
 │   ├── content-elements/            # Content element tests (18 specs, 83 tests)
 │   │   ├── advanced-accordion.spec.js
 │   │   ├── advanced-menu.spec.js
@@ -135,17 +135,30 @@ playwright-e2e-ea/
 │   │   ├── team-members-carousel.spec.js
 │   │   ├── team-members.spec.js
 │   │   └── testimonials.spec.js
-│   ├── creative-elements/          # Creative element tests (6 specs, 21 tests)
+│   ├── creative-elements/          # Creative element tests (15 specs, 71 tests)
+│   │   ├── countdown.spec.js
+│   │   ├── counter.spec.js
+│   │   ├── divider.spec.js
+│   │   ├── fancy-chart.spec.js
+│   │   ├── fancy-text.spec.js
 │   │   ├── filterable-gallery.spec.js
+│   │   ├── image-accordion.spec.js
+│   │   ├── image-comparison.spec.js
 │   │   ├── image-hotspots.spec.js
+│   │   ├── image-scroller.spec.js
 │   │   ├── interactive-cards.spec.js
 │   │   ├── interactive-circle.spec.js
 │   │   ├── interactive-promo.spec.js
-│   │   └── one-page-nav.spec.js
+│   │   ├── one-page-nav.spec.js
+│   │   └── progress-bar.spec.js
 │   ├── documentation-elements/     # Documentation element tests (3 specs, 5 tests) ✨
 │   │   ├── betterdocs-category-box.spec.js
 │   │   ├── betterdocs-category-grid.spec.js
 │   │   └── betterdocs-search-form.spec.js
+│   ├── dynamic-content-elements/  # Dynamic content element tests (3 specs, 10 tests)
+│   │   ├── advanced-data-table.spec.js
+│   │   ├── content-timeline.spec.js
+│   │   └── table.spec.js
 │   ├── form-styler-elements/       # Form styler element tests (11 specs, 34 tests) ✨
 │   │   ├── caldera-forms.spec.js
 │   │   ├── contact-form-7.spec.js
@@ -282,16 +295,16 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ### Dynamic Content Elements (13)
 
-- [ ] Advanced Data Table
+- [x] Advanced Data Table
 - [ ] Advanced Google Map
 - [ ] Post Grid
 - [ ] Business Reviews
 - [ ] Post Block
 - [ ] Content Ticker
-- [ ] Data Table
+- [x] Data Table
 - [ ] NFT Gallery
 - [ ] Post Timeline
-- [ ] Content Timeline
+- [x] Content Timeline
 - [ ] Smart Post List
 - [ ] Dynamic Gallery
 - [ ] Post Carousel
@@ -307,23 +320,23 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 - [x] Interactive Circle
 - [x] Filterable Gallery
-- [ ] Divider
+- [x] Divider
 - [ ] Lightbox and Modal
 - [ ] SVG Draw
 - [x] Interactive Cards
 - [x] Image Hotspots
-- [ ] Fancy Text
+- [x] Fancy Text
 - [ ] Flip Carousel
-- [ ] Fancy Chart
+- [x] Fancy Chart
 - [x] Interactive Promo
-- [ ] Image Scroller
-- [ ] Counter
-- [ ] Progress Bar
+- [x] Image Scroller
+- [x] Counter
+- [x] Progress Bar
 - [ ] Stacked Cards
 - [x] One Page Navigation
-- [ ] Image Comparison
-- [ ] Countdown
-- [ ] Image Accordion
+- [x] Image Comparison
+- [x] Countdown
+- [x] Image Accordion
 - [ ] 360 Degree Photo Viewer
 
 ### Figma Design (1)
@@ -404,21 +417,21 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ---
 
-**Total Progress:** 62/115 demos automated (53.91%) | **236 individual test cases**
+**Total Progress:** 74/115 demos automated (64.35%) | **296 individual test cases**
 
 **Breakdown by Category:**
 
 | Category                    | Demos | Tests    | Coverage |
 | --------------------------- | ----- | -------- | -------- |
 | ✅ Content Elements         | 18/24 | 83 tests | 75%      |
-| ✅ Creative Elements        | 6/20  | 21 tests | 30%      |
+| ✅ Creative Elements        | 15/20 | 71 tests | 75%      |
 | ✅ Documentation Elements   | 3/3   | 5 tests  | 100% ✨  |
+| ✅ Dynamic Content Elements | 3/13  | 10 tests | 23%      |
 | ✅ Form Styler Elements     | 11/11 | 34 tests | 100% ✨  |
 | ✅ LearnDash Elements       | 1/1   | 5 tests  | 100% ✨  |
 | ✅ Marketing Elements       | 4/4   | 22 tests | 100% ✨  |
 | ✅ Social Elements          | 3/4   | 6 tests  | 75%      |
 | ✅ WooCommerce Elements     | 16/16 | 60 tests | 100% ✨  |
-| ⏳ Dynamic Content Elements | 0/13  | 0 tests  | 0%       |
 | ⏳ Figma Design             | 0/1   | 0 tests  | 0%       |
 | ⏳ Extensions               | 0/18  | 0 tests  | 0%       |
 
