@@ -24,8 +24,8 @@ export default defineConfig({
     testIdAttribute: "data-id",
 
     screenshot: "on",
-    trace: "on",
-    video: "retain-on-failure",
+    trace: "on-first-retry",
+    video: "on-first-retry",
 
     ignoreHTTPSErrors: true,
   },
