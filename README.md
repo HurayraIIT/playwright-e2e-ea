@@ -18,14 +18,14 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 ### 📊 **Test Coverage**
 
-![Coverage](https://img.shields.io/badge/Coverage-74%2F115-blue?style=for-the-badge)
-![Automated](https://img.shields.io/badge/Automated-64.35%25-green?style=for-the-badge)
-![Total Tests](https://img.shields.io/badge/Total_Tests-296-brightgreen?style=for-the-badge)
-![Remaining](https://img.shields.io/badge/Remaining-41-orange?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-81%2F115-blue?style=for-the-badge)
+![Automated](https://img.shields.io/badge/Automated-70.43%25-green?style=for-the-badge)
+![Total Tests](https://img.shields.io/badge/Total_Tests-324-brightgreen?style=for-the-badge)
+![Remaining](https://img.shields.io/badge/Remaining-34-orange?style=for-the-badge)
 
 ### 🔗 **[VIEW LIVE TEST REPORTS →](https://ea-visual-regression.hurayraiit.com/)**
 
-**✅ 74 Demos Automated** | **🧪 296 Total Tests** | **⏳ 41 Demos Remaining** | **📈 64.35% Complete**
+**✅ 81 Demos Automated** | **🧪 324 Total Tests** | **⏳ 34 Demos Remaining** | **📈 70.43% Complete**
 
 </div>
 
@@ -43,11 +43,11 @@ This project provides comprehensive automated testing for [Essential Addons for 
 
 - **Visual Regression Testing**: Screenshot-based comparison with 3% pixel difference tolerance
 - **Parallel Execution**: Tests run in parallel for faster execution
-- **Comprehensive Coverage**: 296 test cases across 74 widgets (64.35% of 115 total widgets)
+- **Comprehensive Coverage**: 324 test cases across 81 widgets (70.43% of 115 total widgets)
 - **CI/CD Ready**: Configured for continuous integration environments
 - **Detailed Reporting**: HTML reports with screenshots, traces, and videos
 - **Network Optimization**: Blocks unnecessary third-party scripts for faster tests
-- **Category Completion**: 5 categories fully automated (Documentation, Marketing, LearnDash, Form Styler, WooCommerce)
+- **Category Completion**: 6 categories fully automated (Content, Documentation, Marketing, LearnDash, Form Styler, WooCommerce)
 
 ## 🚀 Getting Started
 
@@ -115,9 +115,10 @@ npx playwright show-report
 
 ```
 playwright-e2e-ea/
-├── tests/                          # Test files organized by category (74 spec files, 296 tests)
-│   ├── content-elements/            # Content element tests (18 specs, 83 tests)
+├── tests/                          # Test files organized by category (81 spec files, 324 tests)
+│   ├── content-elements/            # Content element tests (25 specs, 111 tests) ✨
 │   │   ├── advanced-accordion.spec.js
+│   │   ├── advanced-google-map.spec.js
 │   │   ├── advanced-menu.spec.js
 │   │   ├── advanced-search.spec.js
 │   │   ├── advanced-tabs.spec.js
@@ -126,15 +127,21 @@ playwright-e2e-ea/
 │   │   ├── content-toggle.spec.js
 │   │   ├── creative-buttons.spec.js
 │   │   ├── dual-color-headline.spec.js
+│   │   ├── event-calendar.spec.js
 │   │   ├── feature-list.spec.js
 │   │   ├── flip-box.spec.js
 │   │   ├── info-box.spec.js
 │   │   ├── logo-carousel.spec.js
+│   │   ├── offcanvas-content.spec.js
+│   │   ├── protected-content.spec.js
 │   │   ├── simple-menu.spec.js
 │   │   ├── static-product.spec.js
+│   │   ├── sticky-video.spec.js
 │   │   ├── team-members-carousel.spec.js
 │   │   ├── team-members.spec.js
-│   │   └── testimonials.spec.js
+│   │   ├── testimonial-slider.spec.js
+│   │   ├── testimonials.spec.js
+│   │   └── tooltip.spec.js
 │   ├── creative-elements/          # Creative element tests (15 specs, 71 tests)
 │   │   ├── countdown.spec.js
 │   │   ├── counter.spec.js
@@ -269,34 +276,34 @@ This section tracks the automation status of all Essential Addons for Elementor 
 ### Content Elements (24)
 
 - [x] Advanced Search
-- [ ] Event Calendar
+- [x] Event Calendar
 - [x] Info Box
-- [ ] Testimonial Slider
+- [x] Testimonial Slider
 - [x] Testimonials
 - [x] Toggle
 - [x] Simple Menu
 - [x] Flip Box
 - [x] Team Member Carousel
 - [x] Team Member
-- [ ] Protected Content
+- [x] Protected Content
 - [x] Feature List
 - [x] Creative Buttons
 - [x] Logo Carousel
 - [x] Advanced Accordion
-- [ ] Tooltip
-- [ ] Offcanvas
+- [x] Tooltip
+- [x] Offcanvas
 - [x] Breadcrumb
 - [x] Static Product
 - [x] Dual Color Heading
 - [x] Advanced Tabs
-- [ ] Sticky Video
+- [x] Sticky Video
 - [x] Advanced Menu
 - [x] Code Snippet
 
 ### Dynamic Content Elements (13)
 
 - [x] Advanced Data Table
-- [ ] Advanced Google Map
+- [x] Advanced Google Map
 - [ ] Post Grid
 - [ ] Business Reviews
 - [ ] Post Block
@@ -417,25 +424,25 @@ This section tracks the automation status of all Essential Addons for Elementor 
 
 ---
 
-**Total Progress:** 74/115 demos automated (64.35%) | **296 individual test cases**
+**Total Progress:** 81/115 demos automated (70.43%) | **324 individual test cases**
 
 **Breakdown by Category:**
 
-| Category                    | Demos | Tests    | Coverage |
-| --------------------------- | ----- | -------- | -------- |
-| ✅ Content Elements         | 18/24 | 83 tests | 75%      |
-| ✅ Creative Elements        | 15/20 | 71 tests | 75%      |
-| ✅ Documentation Elements   | 3/3   | 5 tests  | 100% ✨  |
-| ✅ Dynamic Content Elements | 3/13  | 10 tests | 23%      |
-| ✅ Form Styler Elements     | 11/11 | 34 tests | 100% ✨  |
-| ✅ LearnDash Elements       | 1/1   | 5 tests  | 100% ✨  |
-| ✅ Marketing Elements       | 4/4   | 22 tests | 100% ✨  |
-| ✅ Social Elements          | 3/4   | 6 tests  | 75%      |
-| ✅ WooCommerce Elements     | 16/16 | 60 tests | 100% ✨  |
-| ⏳ Figma Design             | 0/1   | 0 tests  | 0%       |
-| ⏳ Extensions               | 0/18  | 0 tests  | 0%       |
+| Category                    | Demos | Tests     | Coverage |
+| --------------------------- | ----- | --------- | -------- |
+| ✅ Content Elements         | 24/24 | 111 tests | 100% ✨  |
+| ✅ Creative Elements        | 15/20 | 71 tests  | 75%      |
+| ✅ Documentation Elements   | 3/3   | 5 tests   | 100% ✨  |
+| ✅ Dynamic Content Elements | 4/13  | 10 tests  | 31%      |
+| ✅ Form Styler Elements     | 11/11 | 34 tests  | 100% ✨  |
+| ✅ LearnDash Elements       | 1/1   | 5 tests   | 100% ✨  |
+| ✅ Marketing Elements       | 4/4   | 22 tests  | 100% ✨  |
+| ✅ Social Elements          | 3/4   | 6 tests   | 75%      |
+| ✅ WooCommerce Elements     | 16/16 | 60 tests  | 100% ✨  |
+| ⏳ Figma Design             | 0/1   | 0 tests   | 0%       |
+| ⏳ Extensions               | 0/18  | 0 tests   | 0%       |
 
-**🎉 Fully Automated Categories:** Documentation Elements, Marketing Elements, LearnDash Elements, Form Styler Elements, WooCommerce Elements
+**🎉 Fully Automated Categories:** Content Elements, Documentation Elements, Marketing Elements, LearnDash Elements, Form Styler Elements, WooCommerce Elements
 
 ## 🔗 Links
 
