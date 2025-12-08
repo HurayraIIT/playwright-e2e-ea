@@ -26,7 +26,7 @@ test.describe("TypeForm", () => {
   test("Style 02", async ({ page }) => {
     const section = page.getByTestId("2224002");
     await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(3500);
     await expect(section).toHaveScreenshot();
   });
 });
