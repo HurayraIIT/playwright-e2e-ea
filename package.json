@@ -4,7 +4,11 @@
   "description": "Automated end-to-end testing suite for Essential Addons for Elementor demo pages using Playwright",
   "main": "index.js",
   "scripts": {
-    "publish-report": "rsync -avz --delete playwright-report/ u_eavisual@74.48.43.212:/var/www/ea-visual-regression.hurayraiit.com/playwright-report/"
+    "test": "npx playwright test",
+    "publish-report": "rsync -avz --delete playwright-report/ u_eavisual@74.48.43.212:/var/www/ea-visual-regression.hurayraiit.com/playwright-report/",
+    "//": "--- DOCKER COMMANDS ---",
+    "test:docker": "docker run --rm --ipc=host -v $(pwd):/work/ -w /work/ mcr.microsoft.com/playwright:v1.57.0-jammy /bin/bash -c 'npm ci && npx playwright test'",
+    "update-snapshots:docker": "docker run --rm --ipc=host -v $(pwd):/work/ -w /work/ mcr.microsoft.com/playwright:v1.57.0-jammy /bin/bash -c 'npm ci && npx playwright test --update-snapshots'"
   },
   "keywords": [],
   "author": "Abu Hurayra (HurayraIIT)",
