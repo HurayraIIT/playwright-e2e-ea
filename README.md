@@ -77,6 +77,19 @@ npm install
 npx playwright install
 ```
 
+### How To Update Playwright
+
+```bash
+# Update playwright
+npm install -D @playwright/test@latest
+
+# Install new browsers
+npx playwright install
+
+# See what version of Playwright you have by running the following command
+npx playwright --version
+```
+
 ### Configuration
 
 The project uses environment variables for configuration. Create a `.env` file in the root directory:
