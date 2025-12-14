@@ -19,14 +19,14 @@ test.describe("TypeForm", () => {
   test("Style 01", async ({ page }) => {
     const section = page.getByTestId("af7e5c4");
     await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(5000);
     await expect(section).toHaveScreenshot();
   });
 
   test("Style 02", async ({ page }) => {
     const section = page.getByTestId("2224002");
     await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(3500);
+    await page.waitForTimeout(5000);
     await expect(section).toHaveScreenshot();
   });
 });
