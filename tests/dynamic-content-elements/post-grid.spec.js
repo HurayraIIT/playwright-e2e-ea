@@ -26,7 +26,7 @@ test.describe("Post Grid", () => {
   test("Layout 03", async ({ page }) => {
     const section = page.getByTestId("14661b71");
     await section.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(2500);
     await expect(section).toHaveScreenshot();
   });
 
