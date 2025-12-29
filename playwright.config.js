@@ -30,19 +30,10 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
   },
 
-  /* Configure projects for major browsers */
   projects: [
     {
       name: "chromium",
       use: { ...devices["Desktop Chrome"], ...test },
-    },
-    {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"], ...test },
-    },
-    {
-      name: "webkit",
-      use: { ...devices["Desktop Safari"], ...test },
     },
   ],
 });

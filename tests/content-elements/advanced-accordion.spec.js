@@ -6,8 +6,7 @@ test.describe("Advanced Accordion", () => {
   let heading = "Advanced Accordion";
   let slug = "/advanced-accordion";
 
-  test.beforeEach(async ({ page, browserName }) => {
-    test.skip(browserName === "webkit", "This entire suite is unstable on WebKit");
+  test.beforeEach(async ({ page }) => {
     await page.goto(slug);
     await page.evaluate(() => {
       const el = document.querySelector('[data-elementor-id="283265"]');
