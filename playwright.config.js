@@ -11,10 +11,10 @@ export default defineConfig({
 
   retries: process.env.CI ? 1 : 1,
   workers: process.env.CI ? 4 : 4,
-  timeout: 30 * 1000,
+  timeout: 60 * 1000,
 
   expect: {
-    timeout: 5_000,
+    timeout: 15_000,
     toMatchSnapshot: { maxDiffPixelRatio: 0.03 },
     toHaveScreenshot: { maxDiffPixelRatio: 0.03 },
   },

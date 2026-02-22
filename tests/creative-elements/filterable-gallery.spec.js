@@ -19,7 +19,7 @@ test.describe("Filterable Gallery", () => {
   test("Layout 01", async ({ page }) => {
     const section = page.getByTestId("702c4d9e");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
     await expect(section).toHaveScreenshot();
 
     await section.locator('li[data-filter=".eael-cf-mountains"]').click();
@@ -30,7 +30,7 @@ test.describe("Filterable Gallery", () => {
   test("Layout 02", async ({ page }) => {
     const section = page.getByTestId("5f3be4e0");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
     await expect(section).toHaveScreenshot();
 
     await section.locator('li[data-filter=".eael-cf-headphone"]').click();
@@ -41,7 +41,7 @@ test.describe("Filterable Gallery", () => {
   test("Layout 03", async ({ page }) => {
     const section = page.getByTestId("21c7784d");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
     await expect(section).toHaveScreenshot();
 
     await section.locator('li[data-filter=".eael-cf-pop-singer"]').click();
@@ -52,7 +52,7 @@ test.describe("Filterable Gallery", () => {
   test("Layout 04", async ({ page }) => {
     const section = page.getByTestId("4c05a064");
     await section.scrollIntoViewIfNeeded();
-    // await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
     await expect(section).toHaveScreenshot();
 
     await section.locator("button.fg-filter-trigger").click();
